@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class MoveToPlayer : MonoBehaviour
 {
+    public Vector3 posInit;
     public Transform target;
+    public Action<MoveToPlayer> Esconderse;
     [SerializeField] float speed = 5f;
     private Rigidbody rb;
     private void Awake()
     {
+        posInit = transform.position;
         if (target == null)
             target= transform;
         // Obtener la referencia al Rigidbody del objeto
@@ -24,5 +27,11 @@ public class MoveToPlayer : MonoBehaviour
         // Aplicar la velocidad al Rigidbody del objeto
         rb.velocity = velocity;
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Esconderse?.Invoke(this);
+        }
+    }
 }

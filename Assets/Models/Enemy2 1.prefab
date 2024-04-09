@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 7559003380806661303}
   - component: {fileID: 4449370692179986163}
   - component: {fileID: 4799119842452447865}
-  - component: {fileID: 2605612559529557817}
   m_Layer: 0
   m_Name: default
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,27 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2605612559529557817
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294490131016728051}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.084475994, y: 0.029181998, z: 0.055366006}
-  m_Center: {x: 0, y: 0, z: -0.00000047683716}
 --- !u!1 &8023769393060450125
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +98,7 @@ GameObject:
   - component: {fileID: -5643616742341982048}
   m_Layer: 0
   m_Name: Enemy2 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4713bb15a71ce46ad3ae1f729e3620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posInit: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
   speed: 3
 --- !u!54 &-9150560206355878497

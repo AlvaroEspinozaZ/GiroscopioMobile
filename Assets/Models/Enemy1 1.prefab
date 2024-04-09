@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 7583156958138088560}
   m_Layer: 0
   m_Name: shard1
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1613,7 +1613,7 @@ GameObject:
   - component: {fileID: 7988627824720713255}
   m_Layer: 0
   m_Name: Enemy1 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1670,6 +1670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4713bb15a71ce46ad3ae1f729e3620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posInit: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
   speed: 3
 --- !u!54 &1154590509360717122
